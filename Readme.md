@@ -34,16 +34,23 @@ User Management Service is a **Node.js + Express** API that provides essential f
 ## ⚙️ Installation & Setup  
 
 ### 1️⃣ **Clone the repository**  
-```sh
+```bash
 git clone https://github.com/YOUR-USERNAME/user-management-service.git
 cd user-management-service
+```
+---
 
 ## 2️⃣ Install Dependencies
+```bash
 npm install
+```
+---
 
 ## 3️⃣ Setup Environment Variables
 Create a .env file in the root directory and add:
 # PostgreSQL Credentials
+
+```ini
 PG_USER=news_user
 PG_HOST=localhost
 PG_DATABASE=user_management_db
@@ -54,11 +61,19 @@ PG_PORT=5432
 PORT=5000
 # JWT Secret
 JWT_SECRET=UUJiHxwO5mp8+FKnnaLVdbYBPPgNtcA72Lb7Oh8k+xs=
-
+```
+---
 ## 4️⃣ Setup PostgreSQL Database
+```bash
 sudo -u postgres psql
 CREATE DATABASE user_management_db;
-
+Start PostgreSQL:
+sudo systemctl start postgresql
+```
+Exit PostgreSQL:
+```sql
+\q
+```
 ## 6️⃣ Start the Server
 npm run dev  # Runs in development mode (nodemon)
 npm start    # Runs in production mode
