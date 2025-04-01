@@ -60,7 +60,7 @@ PG_PORT=5432
 # Server Port
 PORT=5000
 # JWT Secret
-JWT_SECRET=UUJiHxwO5mp8+FKnnaLVdbYBPPgNtcA72Lb7Oh8k+xs=
+JWT_SECRET=.....
 ```
 ---
 ## 4️⃣ Setup PostgreSQL Database
